@@ -1,0 +1,10 @@
+D2R Nexus（暗黑中樞）
+Copyright (c) 2026 J.J. Huang. All rights reserved.
+版權所有 (c) 2026 J.J. Huang，保留所有權利。
+
+1. 本軟體可免費供個人使用。
+2. 未經作者書面同意，不得修改、重新散布、再授權或販售本軟體或其任何部分。
+3. 本軟體依「現狀」提供，不附任何明示或默示之擔保，包括但不限於適售性、特定用途適用性及不侵權之擔保。作者不對因使用或無法使用本軟體所生之任何損害負責，使用風險由使用者自行承擔。
+4. Diablo® II: Resurrected 與 Battle.net® 是 Blizzard Entertainment, Inc. 的商標或註冊商標。本軟體為非官方工具，與 Blizzard Entertainment 無關，亦未獲其認可或支援。
+
+第三方元件之授權條款請見 THIRD-PARTY-NOTICES.txt（「關於」視窗中亦附全文）。
