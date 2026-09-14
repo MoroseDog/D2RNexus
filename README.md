@@ -141,6 +141,22 @@ Battle.net 不允許用帳號密碼直接登入有驗證器的帳號，所以 Ne
 刪除 `D2RNexus.exe` 與資料夾 `%LOCALAPPDATA%\D2RNexus`（設定、加密的密碼與 Token、紀錄檔、下載的工具都在裡面）。若用過視窗解析度功能，遊戲設定資料夾中的 `Settings.json.nexus-backup` 是 Nexus 建立的備份，也可以一併刪除。
 </details>
 
+<details>
+<summary>遇到問題怎麼回報？</summary>
+
+請到 [Issues](https://github.com/MoroseDog/D2RNexus/issues) 按「New issue」描述狀況，並盡量附上：
+
+- 作業系統（例如 Windows 11）
+- 遊戲版本（例如 3.3.93847）與 D2R Nexus 版本（上方選單「說明 → 關於 D2R Nexus」）
+- 登入方式（帳號密碼或 Token）與同時開啟的帳號數量
+- 發生了什麼、怎麼操作會發生
+- 日誌內容或截圖
+
+日誌在上方選單「說明 → 開啟日誌資料夾」，其中「環境：」那一行已記錄作業系統與遊戲版本。日誌中的帳號已打碼，也不含密碼或 Token，但貼上前仍請再檢查一次。
+
+Issues 是公開的，請不要貼上密碼、Token 或完整的登入 Email，截圖前也請先遮住畫面上的帳號。
+</details>
+
 ## 授權
 
 Copyright © 2026 J.J. Huang，保留所有權利。
