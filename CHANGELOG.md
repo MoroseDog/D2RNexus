@@ -2,6 +2,12 @@
 
 最新的版本在最上面。下載請到 [Releases](https://github.com/MoroseDog/D2RNexus/releases)。
 
+## v0.2.2（2026-09-20）
+
+**新增**
+
+- 登入視窗多了「用其他方式登入」和「完成登入」兩顆按鈕。用 Apple、Google 這類方式登入、沒有 Battle.net 密碼的帳號，現在也能在 Nexus 裡取得 Token，步驟見[用 Apple、Google 等方式登入](docs/apple-login.md)。這個流程還沒有人實際驗證過，試過歡迎回報。
+
 ## v0.2.1（2026-09-20）
 
 **改善**
