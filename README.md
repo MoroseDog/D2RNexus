@@ -57,7 +57,7 @@ D2R Nexus 只是「幫你開遊戲」的管理工具。它做的事和你自己�
 
 ## 下載與系統需求
 
-到 [Releases](https://github.com/MoroseDog/D2RNexus/releases) 下載 `D2RNexus.exe`，放在任意資料夾直接執行即可。
+到 [Releases](https://github.com/MoroseDog/D2RNexus/releases) 下載 `D2RNexus.exe`，放在任意資料夾直接執行即可。每個版本改了什麼請看[版本紀錄](CHANGELOG.md)。
 
 | 項目 | 需求 |
 |---|---|
@@ -67,6 +67,8 @@ D2R Nexus 只是「幫你開遊戲」的管理工具。它做的事和你自己�
 | 網路 | 登入 Battle.net；第一次多開時，程式會自動下載微軟官方工具（不需要自己先安裝或操作） |
 
 > 第一次執行時，Windows 可能顯示「Windows 已保護您的電腦」，這是因為程式沒有購買程式碼簽章。請按「其他資訊」→「仍要執行」。
+> 用 Edge 下載時若出現「開啟之前，請確定您信任 D2RNexus.exe」，請點「刪除」旁邊的 ∨ →「仍要保留」。
+> 想知道程式需要哪些權限、碰到哪些資料、為什麼會有這些警告，請看[安全性說明](SECURITY.md)。
 
 ## 快速開始
 
