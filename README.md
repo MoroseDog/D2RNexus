@@ -94,6 +94,18 @@ Nexus 只是幫你開遊戲的管理工具，**不注入程式、不讀寫遊戲
 </details>
 
 <details>
+<summary>一直卡在「連接到 Battle.net」</summary>
+
+遊戲已經開起來、多開也成功了，是登入時 Battle.net 沒有回應。依序試試：
+
+1. 關掉遊戲，用 Battle.net 啟動器登入這個帳號一次，有「我不是機器人」之類的驗證就做完，等一段時間再開。短時間登入太多次或打錯密碼幾次，Battle.net 會要求驗證，用 Nexus 開的遊戲沒有地方做驗證，就可能一直卡著
+2. 有開 VPN 或加速器，先關掉再試
+3. 從 Battle.net 啟動器開遊戲也卡住，就是網路或伺服器的問題，和多開無關
+
+還是不行請到 Issues 回報，附上登入方式（帳密或 Token）、是第幾個帳號開始卡，以及日誌。
+</details>
+
+<details>
 <summary>用 Apple、Google 等方式登入，沒有 Battle.net 密碼</summary>
 
 取得 Token 的頁面只接受 Email 和密碼。請在登入視窗按右上角的「用其他方式登入」，用平常的方式登入後再按「完成登入」。步驟見[用 Apple、Google 等方式登入](docs/apple-login.md)。
@@ -150,9 +162,9 @@ Nexus 只是幫你開遊戲的管理工具，**不注入程式、不讀寫遊戲
 </details>
 
 <details>
-<summary>視窗解析度為什麼只有這幾個？</summary>
+<summary>視窗解析度可以設多小？</summary>
 
-這些是遊戲支援的視窗大小，其他尺寸畫面會被裁切。選「不變更」就沿用遊戲的設定。
+清單是遊戲支援的視窗大小，也可以選「自行輸入」。最小建議 1280x720，再小遊戲不會等比例縮小，而是直接裁掉畫面（物品欄、快捷列可能看不到）。
 </details>
 
 <details>
