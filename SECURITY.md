@@ -73,6 +73,9 @@ Nexus 沒有任何把你的帳號、密碼、Token 或設定送到其他地方�
 
 - 只從本專案的 [Releases](https://github.com/MoroseDog/D2RNexus/releases) 下載。
 - 核對 Release 說明或 `SHA256SUMS.txt` 裡的檔案指紋：在檔案所在資料夾開啟 PowerShell，執行 `Get-FileHash .\D2RNexus.exe -Algorithm SHA256`，比對是否一致。
+- 看 Release 說明附的 VirusTotal 掃描結果，或自己把檔案上傳到 [VirusTotal](https://www.virustotal.com) 掃描。
+- 用微軟的 [TCPView](https://learn.microsoft.com/sysinternals/downloads/tcpview) 看 Nexus 實際連線的對象，用 [Process Monitor](https://learn.microsoft.com/sysinternals/downloads/procmon) 看它讀寫了哪些檔案與登錄檔。
+- Nexus 是沒有混淆的 .NET 程式，懂程式的人可以用 ILSpy 之類的工具直接檢視程式邏輯。授權只禁止修改與重新散布，檢視沒有問題。
 
 ## 回報安全問題
 
