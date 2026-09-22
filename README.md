@@ -6,6 +6,8 @@
 
 <p align="center">《暗黑破壞神 II：獄火重生》多帳號啟動與管理工具（Windows）</p>
 
+<p align="center"><b>繁體中文</b> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="README.ko.md">한국어</a></p>
+
 <p align="center">
   <a href="https://github.com/MoroseDog/D2RNexus/releases"><img src="https://img.shields.io/github/v/release/MoroseDog/D2RNexus?include_prereleases&label=download" alt="下載最新版本"></a>
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6" alt="Windows 10 | 11">
@@ -38,6 +40,7 @@
 - **迷你視窗** —— 常駐小清單，一眼看出哪些開著，點一下切換或補開
 - **快捷鍵** —— 每個帳號一組，按下直接切到那個遊戲
 - **右下角圖示** —— 按關閉鈕可以選擇收到工作列右下角，程式繼續執行
+- **多語系介面** —— 繁體中文、简体中文、English、한국어，左下角的地球圖示或上方「語言」選單就能切換
 - **檢查新版本** —— 有新版會提示，不會自動下載或安裝，可關閉
 
 ## ⬇️ 下載

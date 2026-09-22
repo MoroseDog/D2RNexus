@@ -1,6 +1,18 @@
 # 版本紀錄
 
+**繁體中文** · [简体中文](CHANGELOG.zh-CN.md) · [English](CHANGELOG.en.md) · [한국어](CHANGELOG.ko.md)
+
 最新的版本在最上面。下載請到 [Releases](https://github.com/MoroseDog/D2RNexus/releases)。
+
+## v0.4.2（2026-09-22）
+
+**新增**
+
+- **介面支援多種語言**：繁體中文、简体中文、English、한국어。預設跟隨 Windows 的語言，也可以從上方「語言」選單、左下角的地球圖示或全域設定切換；換了會問要不要馬上重新開啟，已開啟的遊戲不受影響。
+
+**改善**
+
+- exe 補上發行者、產品名稱、說明與著作權等檔案資訊。
 
 ## v0.4.1（2026-09-22）
 
