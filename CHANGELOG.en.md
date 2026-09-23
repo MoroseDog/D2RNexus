@@ -8,13 +8,13 @@ The newest version is at the top. Download from [Releases](https://github.com/Mo
 
 **Fixed**
 
-- **The frame cap was written to the wrong setting**: Nexus used to write your number into the game's "target frame rate" (which belongs to dynamic resolution scaling) and set the game's own frame cap to 1. It now writes the frame cap itself and never touches the target. Thanks to shiun00 for reporting it.
-- Updating does not restore a target frame rate that an older version changed. If you use dynamic resolution scaling, set it back to the value you want in the game's display settings.
+- **The frame cap did not actually apply**: Nexus used to write your number into the game's "target frame rate" (which belongs to dynamic resolution scaling) and set the game's own frame cap to 1. It now writes the frame cap itself. The game limits frames at whichever of the two is higher, so a target above the cap is brought down to the same number, and one that is already lower is left alone. Thanks to shiun00 for reporting it.
+- Updating does not restore a target frame rate that an older version changed. If you use dynamic resolution scaling, check that value in the game's display settings.
 - When you press a key combination the hotkey box cannot use, it now says that the combination must include Ctrl, Alt or Win, and tells you when another account already has that combination. It used to do nothing at all, which looked broken.
 
 **Improved**
 
-- New FAQ entry: an account with token login can only play offline.
+- New FAQ entries: an account with token login can only play offline, and the frame cap is set but the frame rate is different.
 
 ## v0.4.2 (2026-09-22)
 

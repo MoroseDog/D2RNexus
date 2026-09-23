@@ -125,9 +125,17 @@ The page that gets the token only accepts an email and password. In the login wi
 <details>
 <summary>Will Nexus change the settings I adjusted in the game?</summary>
 
-It only writes the **Window size** and **Frame cap** you set under "Display & performance". Other game settings (graphics, volume, automap, key bindings…) are never touched.
+It only writes the **Window size** and **Frame cap** you set under "Display & performance". Other game settings (graphics, volume, automap, key bindings…) are never touched. The game limits frames at whichever is higher, the cap or the target frame rate of dynamic resolution scaling, so when that target sits above the cap, Nexus brings it down to the same number.
 
 Those two are controlled by Nexus, so if you change them in the game, the account's settings will overwrite them at the next launch. To make the values you tuned in the game the defaults, go to "Global settings → Display & performance" and click "Read current game settings" once.
+</details>
+
+<details>
+<summary>The frame cap is set but the frame rate is different</summary>
+
+Check **VSync** in the game's display settings first. With it on, the frame rate only lands on whole divisions of the monitor's refresh rate — on a 60 Hz screen that is 60, 30, 20 and 15 — so a cap of 36 or 45 runs at 30. Turn VSync off to follow the number exactly.
+
+The other one is the **target frame rate** of dynamic resolution scaling: the game limits frames at whichever of the two is higher. From v0.4.3 Nexus brings it down together with the cap when it has to; on older versions check that value in the game yourself.
 </details>
 
 <details>
