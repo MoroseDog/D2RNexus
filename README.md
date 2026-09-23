@@ -109,6 +109,14 @@ Nexus 只是幫你開遊戲的管理工具，**不注入程式、不讀寫遊戲
 </details>
 
 <details>
+<summary>用 Token 登入的帳號，進遊戲只能離線？</summary>
+
+那個 Token 失效了。改過 Battle.net 密碼、重綁或停用驗證器都會讓它失效。
+
+到帳號設定的「登入 Token」按「清除」，再按一次「取得 Token」，在手機重新核准。沒綁驗證器的帳號，也可以取消勾選「使用 Token 登入」，改用帳號密碼登入。
+</details>
+
+<details>
 <summary>用 Apple、Google 等方式登入，沒有 Battle.net 密碼</summary>
 
 取得 Token 的頁面只接受 Email 和密碼。請在登入視窗按右上角的「用其他方式登入」，用平常的方式登入後再按「完成登入」。步驟見[用 Apple、Google 等方式登入](docs/apple-login.md)。

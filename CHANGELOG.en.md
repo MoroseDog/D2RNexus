@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.4.3 (2026-09-23)
+
+**Fixed**
+
+- **The frame cap was written to the wrong setting**: Nexus used to write your number into the game's "target frame rate" (which belongs to dynamic resolution scaling) and set the game's own frame cap to 1. It now writes the frame cap itself and never touches the target. Thanks to shiun00 for reporting it.
+- Updating does not restore a target frame rate that an older version changed. If you use dynamic resolution scaling, set it back to the value you want in the game's display settings.
+- When you press a key combination the hotkey box cannot use, it now says that the combination must include Ctrl, Alt or Win, and tells you when another account already has that combination. It used to do nothing at all, which looked broken.
+
+**Improved**
+
+- New FAQ entry: an account with token login can only play offline.
+
 ## v0.4.2 (2026-09-22)
 
 **Added**

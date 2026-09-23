@@ -109,6 +109,14 @@ If it still doesn't work, please report it in Issues with your login method (pas
 </details>
 
 <details>
+<summary>An account with token login can only play offline</summary>
+
+That token is no longer valid. Changing your Battle.net password, re-linking the authenticator or removing it all invalidate it.
+
+In the account settings, next to "Login token", click "Clear" and then "Get token" again, and approve it once more on your phone. For an account without an authenticator you can also uncheck "Use token login" and sign in with the account and password instead.
+</details>
+
+<details>
 <summary>I sign in with Apple, Google, etc. and don't have a Battle.net password</summary>
 
 The page that gets the token only accepts an email and password. In the login window, click "Sign in another way" at the top right, sign in the way you usually do, then click "Done signing in". For the steps, see [Signing in with Apple, Google, etc. (Chinese)](docs/apple-login.md).
