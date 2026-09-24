@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.4.4 (2026-09-25)
+
+**Added**
+
+- **You can choose which accounts the mini window shows.** With many accounts the list gets too long, so right-click a row and choose "Hide from this list", or untick "Show in the mini window" in the account settings. Under the list it says how many are not shown and how many of those are running; the arrow opens them so you can put them back one at a time, or all at once. A hidden account still launches as usual and keeps its shortcut, and the two numbers on the collapsed bar still count every account.
+
+**Improved**
+
+- **The delay between accounts now starts at 5 seconds.** It used to be 0, which started the next game the moment the previous window appeared; with several accounts all of them load at once and end up not starting at all. Settings that already exist keep their own value, and with more than four accounts ticked at a delay of 0 the activity log says so once.
+- **Waiting for the previous token account is no longer silence**: the activity log has a line when the wait starts and another when it ends with the number of seconds, the account row now says "Waiting for the previous account", and hovering it shows the whole sentence.
+- The readme gained a diagram of the order token accounts start in, and three new FAQ entries: an account with token login stops at "Press any key to continue", Asia works but Europe and the Americas cannot reach the server, and several games at once stutter or will not start.
+
 ## v0.4.3 (2026-09-23)
 
 **Fixed**

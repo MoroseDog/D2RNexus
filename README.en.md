@@ -68,6 +68,21 @@ Drag the ≡ on the left of an account to change the launch order. A lit "Global
 
 > 💡 When running several games, lower the **Frame cap** of your background accounts and set their **CPU priority** to "Low" — your main account will run a bit smoother.
 
+### The order token accounts start in
+
+```mermaid
+flowchart LR
+    A["Press 'Launch selected'"] --> B{"How does this account sign in?"}
+    B -->|Account and password| C["The game starts and signs in by itself"]
+    C --> D["No waiting, the next one starts"]
+    B -->|Token| E["The token is written, the game starts"]
+    E --> F["It waits on 'Press any key to continue'"]
+    F --> G["You press a key, the game signs in"]
+    G --> H["The token is read, the next one starts"]
+```
+
+Windows holds only one token at a time, so two token accounts cannot start together: **until you press a key in the previous game's window, the accounts behind it keep waiting** — the activity log says which one they are waiting for and for how long. Accounts that sign in with an account and password do it by themselves and are not affected.
+
 ### Mini window
 
 While you play, shrink the main window into a small list and keep it in a corner of the screen:
@@ -75,6 +90,8 @@ While you play, shrink the main window into a small list and keep it in a corner
 ![Mini window](docs/images/mini.en.png)
 
 A green dot means the game is open (click to switch to it), a gray dot means it isn't (click to launch it), and an orange dot means the game isn't responding (right-click to close it). Next to each dot is the CPU and memory that account is using.
+
+With many accounts the list gets long: to leave one out, right-click its row and choose "Hide from this list", or untick "Show in the mini window" in the account settings. Under the list it says how many are not shown and how many of those are running; the arrow next to it opens them, and clicking one puts it back on the list. A hidden account still launches as usual and keeps its shortcut.
 
 ## 🛡️ Not a cheat
 
@@ -109,11 +126,27 @@ If it still doesn't work, please report it in Issues with your login method (pas
 </details>
 
 <details>
+<summary>Asia works, but Europe or the Americas says it cannot reach the server</summary>
+
+This happens with account-and-password login; switching that account to token login fixes it. Asia is not affected.
+
+In the account settings set "Login region" to Europe or the Americas, tick "Use token login", then click "Get token" and approve it once on your phone. **A token belongs to one region**, so changing the region means getting a new one. If the token you get does not match the login region, the activity log says so.
+</details>
+
+<details>
 <summary>An account with token login can only play offline</summary>
 
 That token is no longer valid. Changing your Battle.net password, re-linking the authenticator or removing it all invalidate it.
 
 In the account settings, next to "Login token", click "Clear" and then "Get token" again, and approve it once more on your phone. For an account without an authenticator you can also uncheck "Use token login" and sign in with the account and password instead.
+</details>
+
+<details>
+<summary>An account with token login stops at "Press any key to continue"</summary>
+
+That is how the game behaves: when it starts with a token it waits on its title screen, and it only begins signing in once you **press a key in that window**. Accounts that sign in with an account and password do it by themselves.
+
+With several token accounts this step matters even more: Windows only holds one token at a time, so **the next account can only start after the previous one has signed in**. Until you press that key the accounts behind it keep waiting (the activity log says what they are waiting for and for how long). Press a key in each token account's window as it appears and the rest follow on.
 </details>
 
 <details>
@@ -144,6 +177,18 @@ The other one is the **target frame rate** of dynamic resolution scaling: the ga
 When several games are running, they all compete for the CPU. If you set your background accounts to "Low", your main account gets the CPU first and stutters a bit less.
 
 Note that it **doesn't lower CPU usage**; it only decides who goes first. If you don't run many games and your CPU isn't maxed out, you won't notice any difference, so just leave it at "Normal".
+</details>
+
+<details>
+<summary>Several games at once stutter, or too many at once will not start</summary>
+
+Nexus only starts the games; once they are running it uses no performance of its own, and the stutter comes from several games running together. For the accounts you keep in the background, set all three:
+
+1. **Frame cap** 15 or 30
+2. **CPU priority** to "Low", so the account you play gets the CPU first
+3. **Window size** to 1280x720
+
+When you start many at once and the next game crowds the one still loading, set "Delay between accounts" to 5–10 seconds under "Global settings → Launch & diagnostics".
 </details>
 
 <details>
