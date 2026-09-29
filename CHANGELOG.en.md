@@ -4,6 +4,17 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.4.6 (2026-09-30)
+
+**Added**
+
+- **The mini window moves open games to the top of its list**, so with many accounts you no longer scroll to find the ones already running. Running accounts come before the rest, and within each group the order of the account list is kept. Turn off "Open games at the top" in the panel's right-click menu if you prefer the plain order; the choice is remembered.
+- **Open the settings folder** has been added to the "Help" menu. To keep a backup of your setup, copy that whole folder.
+
+**Improved**
+
+- New FAQ entry: will updating lose my settings? Updating only replaces the exe, and accounts and settings live in a separate folder, so nothing is lost. On another computer or under another Windows user, passwords and login tokens do have to be entered again.
+
 ## v0.4.5 (2026-09-29)
 
 **Added**

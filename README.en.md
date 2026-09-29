@@ -94,7 +94,7 @@ A green dot means the game is open (click to switch to it), a gray dot means it 
 
 With many accounts the list gets long: to leave one out, right-click its row and choose "Hide from this list", or untick "Show in the mini window" in the account settings. Under the list it says how many are not shown and how many of those are running; the arrow next to it opens them, and clicking one puts it back on the list. A hidden account still launches as usual and keeps its shortcut.
 
-Drag the window's edges to resize it; the list scrolls when it no longer fits. The bottom line is the memory in use on the **whole graphics card**, shown as a percentage while the window is collapsed and coloured once nine tenths of it is gone. Each row of the account list shows the CPU and memory that account's game is using as well.
+The accounts whose games are open are moved to the top of the list, so with many accounts you do not have to scroll to find them; turn off "Open games at the top" in the panel's right-click menu if you would rather keep the order. Drag the window's edges to resize it; the list scrolls when it no longer fits. The bottom line is the memory in use on the **whole graphics card**, shown as a percentage while the window is collapsed and coloured once nine tenths of it is gone. Each row of the account list shows the CPU and memory that account's game is using as well.
 
 ## 🛡️ Not a cheat
 
@@ -238,6 +238,14 @@ The list contains the window sizes the game supports, and you can also choose "C
 <summary>Will closing Nexus close my games?</summary>
 
 No. When you reopen Nexus, it still recognizes the games it opened earlier and won't let the same account open twice.
+</details>
+
+<details>
+<summary>Will updating lose my settings?</summary>
+
+No. Updating means replacing the old `D2RNexus.exe` with the new one. Accounts, groups and display settings live in a separate folder, and the new version picks them up as they are.
+
+To keep a copy of your own, use "Help → Open the settings folder" in the top menu and copy the whole folder. **On another computer or under another Windows user, passwords and login tokens have to be entered again**: those two files are encrypted by Windows for the user who created them and cannot be opened elsewhere.
 </details>
 
 <details>
