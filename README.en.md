@@ -37,7 +37,8 @@ Check the accounts you want to play and click "Launch selected". Nexus opens eac
 
 - **No installation** — a single exe, no need to install .NET separately
 - **Screen privacy** — accounts are masked automatically; passwords and tokens are saved on your PC with Windows encryption
-- **Mini window** — a small list that stays on screen, showing at a glance which games are open; click to switch to one, or to launch one that isn't open
+- **Mini window** — a small list that stays on screen, showing at a glance which games are open; click to switch to one, or to launch one that isn't open, and drag its edges to resize it
+- **You can see what is in use** — running accounts show their CPU and memory, and the whole graphics card's memory is there too, so you know before starting one more
 - **Hotkeys** — one per account; press it to switch straight to that game
 - **Tray icon** — when you click the close button, you can choose to minimize to the system tray (bottom right of the taskbar) and the program keeps running
 - **Multilingual interface** — 繁體中文, 简体中文, English, 한국어; switch with the globe icon at the bottom left or the "Language" menu at the top
@@ -92,6 +93,8 @@ While you play, shrink the main window into a small list and keep it in a corner
 A green dot means the game is open (click to switch to it), a gray dot means it isn't (click to launch it), and an orange dot means the game isn't responding (right-click to close it). Next to each dot is the CPU and memory that account is using.
 
 With many accounts the list gets long: to leave one out, right-click its row and choose "Hide from this list", or untick "Show in the mini window" in the account settings. Under the list it says how many are not shown and how many of those are running; the arrow next to it opens them, and clicking one puts it back on the list. A hidden account still launches as usual and keeps its shortcut.
+
+Drag the window's edges to resize it; the list scrolls when it no longer fits. The bottom line is the memory in use on the **whole graphics card**, shown as a percentage while the window is collapsed and coloured once nine tenths of it is gone. Each row of the account list shows the CPU and memory that account's game is using as well.
 
 ## 🛡️ Not a cheat
 

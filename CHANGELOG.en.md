@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.4.5 (2026-09-29)
+
+**Added**
+
+- **The mini window can be resized** by dragging its edges, like any other window; make it short when you have many accounts and the list scrolls. The size is remembered, and right-clicking the panel puts it back to fitting its contents.
+- **Graphics card memory**: the bottom line of the mini window says how much of the whole card is in use, for example 6.2 / 8.0 GB, and shows a percentage while the window is collapsed. The account list has the same figure at the end of the "Activity log" line. It changes colour once nine tenths is gone. The game leans on the card heavily since the expansion, so it is worth a look before starting one more.
+- **Each account's CPU and memory** now appear on its row in the account list while its game is running, instead of only in the mini window.
+
+**Improved**
+
+- These numbers are only refreshed while something on screen is showing them: the mini window, or the account list with at least one game running. With nothing running, nothing is measured, so leaving Nexus open all day costs nothing.
+
 ## v0.4.4 (2026-09-25)
 
 **Added**
