@@ -4,6 +4,23 @@
 
 This page explains what permissions D2R Nexus needs, what data it touches, where it connects, and why antivirus software or Windows may show a warning.
 
+<h2 align="center">⚠️ From v0.5.0, Nexus can send a key press to the game</h2>
+
+<p align="center"><b>Off by default. You have to turn it on yourself, read what it does and agree to it.<br>
+Once it is on, the program is operating the game for you, and the risk to your account is yours.</b></p>
+
+<p align="center"><b>Each account also decides for itself.<br>
+To keep your main account or a mule out of this entirely, leave it off for that account.</b></p>
+
+> [!IMPORTANT]
+> **What changed in v0.5.0: Nexus can now press past the game's title screen for you.**
+>
+> **Up to v0.4.6**, Nexus never sent any key to the game, and said so. **From v0.5.0** there is one feature that does: it presses "Press any key to continue" for you.
+>
+> - The feature is **off by default**. Leave it off and Nexus behaves exactly as it did before, sending no keys at all.
+> - To use it you have to turn it on yourself under "Global settings → Help with signing in". You are first shown what it does, and the agree button only becomes available after a five-second countdown.
+> - Once it is on, the program is operating the game for you. **The risk to your account is yours**, so weigh it before you decide.
+
 ## Why it needs administrator permission
 
 When the game starts, it creates a system marker that says "one is already open", and a second game that sees it won't start. Closing this marker requires administrator permission, so Nexus asks once when it opens.
@@ -27,13 +44,14 @@ When the game starts, it creates a system marker that says "one is already open"
 | Check for new versions | At startup, reads the version number from this project's Releases and lets you know if it's newer than the current one. It never downloads or installs anything automatically, and can be turned off in Global settings |
 | OTP account login | Opens the official Battle.net login page to get a login token, and writes it to the Windows registry location that the Battle.net launcher itself uses; the game clears it automatically after reading it |
 | Recognize the games it opened | Remembers the process ID, start time, and executable path, so the same account isn't opened twice |
+| Press past the title screen (off by default) | After you have turned it on and agreed, sends a single space bar to the game window Nexus opened, getting past the game's own "Press any key to continue". Only to that window, only before the sign-in finishes, and it stops when the sign-in is done or the window closes. It is a Windows message to that one window, not simulated keyboard input to the whole machine, so no other program receives it. The time you agreed and the text you agreed to are kept on your own computer. Each account has its own switch as well, so an account can be kept out of it entirely |
 
 ## What it doesn't do
 
 - It doesn't inject any code (such as a DLL) into the game, and doesn't modify the game's program files.
 - It doesn't read or modify the game's memory.
 - It doesn't intercept or modify the game's network traffic.
-- It doesn't automate the game: no AFK botting, auto-fighting, auto-looting, or macros, and it doesn't simulate keyboard or mouse input.
+- It doesn't automate the game: no AFK botting, auto-fighting, auto-looting, or macros. **The one exception** is the last row of the table above, pressing past the title screen: it is off by default, and it sends that single key only after you turn it on and agree.
 - It doesn't bypass Battle.net's human verification (such as CAPTCHAs) or phone verification.
 - It doesn't log keystrokes. Hotkeys are key combinations registered with Windows, not a keyboard hook, so Nexus can't receive any other keys.
 - It doesn't collect your account data or upload it to any server.

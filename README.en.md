@@ -19,6 +19,26 @@ Check the accounts you want to play and click "Launch selected". Nexus opens eac
 
 > Nexus is currently a beta. Some situations are still being tested on real setups.
 
+<h2 align="center">⚠️ From v0.5.0, Nexus can send a key press to the game</h2>
+
+<p align="center"><b>Off by default. You have to turn it on yourself, read what it does and agree to it.<br>
+Once it is on, the program is operating the game for you, and the risk to your account is yours.</b></p>
+
+<p align="center"><b>Each account also decides for itself.<br>
+To keep your main account or a mule out of this entirely, leave it off for that account.</b></p>
+
+> [!IMPORTANT]
+> **What changed in v0.5.0: Nexus can now press past the game's title screen for you.**
+>
+> **Up to v0.4.6**, Nexus never sent any key to the game, and said so. **From v0.5.0** there is one feature that does: it presses "Press any key to continue" for you.
+>
+> - The feature is **off by default**. Leave it off and Nexus behaves exactly as it did before, sending no keys at all.
+> - To use it you have to turn it on yourself under "Global settings → Help with signing in". You are first shown what it does, and the agree button only becomes available after a five-second countdown.
+> - Once it is on, the program is operating the game for you. **The risk to your account is yours**, so weigh it before you decide.
+> - **Each account has its own switch too.** To keep your main account or a mule out of it entirely, turn off "Use the global setting" on that account and leave it off. Turning it on for one account asks you again.
+>
+> What it does, how far it goes and when it stops are in the [security notes](SECURITY.en.md).
+
 ## ✨ Features
 
 **Multi-launch and login**
@@ -98,9 +118,13 @@ The accounts whose games are open are moved to the top of the list, so with many
 
 ## 🛡️ Not a cheat
 
-Nexus is only a management tool that opens the game for you. **It doesn't inject code, doesn't read or write game memory, doesn't modify game files, doesn't intercept network traffic, doesn't automate the game, doesn't simulate keyboard or mouse input, doesn't bypass verification, and doesn't upload your data.** Every method it uses, the permissions it needs, and everything it connects to are listed in the [security notes](SECURITY.en.md).
+Nexus is only a management tool that opens the game for you. **It doesn't inject code, doesn't read or write game memory, doesn't modify game files, doesn't intercept network traffic, doesn't bot, farm or loot for you, doesn't bypass verification, and doesn't upload your data.** Every method it uses, the permissions it needs, and everything it connects to are listed in the [security notes](SECURITY.en.md).
 
-Whether multi-launching and third-party tools comply with the rules is ultimately determined by Blizzard's terms of use and rulings. Nexus cannot guarantee that your accounts will not be penalized in any way.
+There is one exception, **added in v0.5.0 and off by default**: **pressing past the title screen** (up to v0.4.6 the feature did not exist and Nexus sent no keys at all). A game signed in with a token stops at "Press any key to continue" until someone presses a key. With this turned on, Nexus sends a single space bar to the game window it opened itself, and stops as soon as the sign-in is finished. That is the program operating the game for you, so before it can be turned on you are shown exactly what it does, and the agree button only becomes available after a five-second countdown; the time you agreed and the text you agreed to stay on your own computer and are not uploaded anywhere. With it off, Nexus sends no keys at all, and it never records what you press.
+
+**The switch is also per account.** Even with the global setting on, an individual account can be left off: keep your main account and your mules out of this, and if anything does go wrong, the accounts that never used it are not involved. Turning it on for a single account asks you to agree again.
+
+Whether multi-launching and third-party tools comply with the rules is ultimately determined by Blizzard's terms of use and rulings. Nexus cannot guarantee that your accounts will not be penalized in any way, and turning the key press on means taking that risk on knowingly, so decide for yourself first.
 
 ## ❓ FAQ
 
@@ -150,6 +174,10 @@ In the account settings, next to "Login token", click "Clear" and then "Get toke
 That is how the game behaves: when it starts with a token it waits on its title screen, and it only begins signing in once you **press a key in that window**. Accounts that sign in with an account and password do it by themselves.
 
 With several token accounts this step matters even more: Windows only holds one token at a time, so **the next account can only start after the previous one has signed in**. Until you press that key the accounts behind it keep waiting (the activity log says what they are waiting for and for how long). Press a key in each token account's window as it appears and the rest follow on.
+
+"Help with signing in" in the global settings makes this easier: **bringing a token account's game window to the front** is on by default, so you never have to go looking for the window. If you would rather not press the key at all, the same card has **press past the title screen for me**, and Nexus does it for you. That is the program operating the game, so it is off by default, and before it can be turned on you are shown exactly what it does and asked to agree. Weigh the risk for yourself.
+
+If only some of your accounts use it, Nexus **starts the token accounts without the key press last**, so the others do not sit behind one that is waiting for you; the cost is that such an account opens last. The activity log says so when it happens.
 </details>
 
 <details>

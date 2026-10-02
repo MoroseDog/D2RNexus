@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.5.0 (2026-10-02)
+
+**Added**
+
+- **Pressing past the title screen for you (off by default, your agreement needed).** A game signed in with a token stops at "Press any key to continue" until someone presses a key, which with many accounts means clicking through them one by one. With this on, Nexus sends a single space bar for you, so the sign-in finishes sooner and the next account starts sooner. That is the program operating the game for you, so you are first shown what it does and the agree button only becomes available after a five-second countdown; the time you agreed and the text you agreed to stay on your own computer. With it off, no key is ever sent. The key goes only to the game window Nexus opened itself, and stops when the sign-in finishes or the window closes. Accounts that sign in with a password are covered too.
+- **Each account can decide for itself.** By default an account follows the global setting, but you can turn it on for a few accounts only, or keep your main account and mules out of it completely, so that if anything does go wrong the accounts that never used it are not involved. Turning it on for one account shows the same agreement first. When only some accounts use it, the token accounts without the key press start last, so the others do not sit behind one that is waiting for you.
+- **A token account's game window is brought to the front when it appears** (on by default). If you would rather not turn the key press on, at least you no longer have to go looking for that window, and the next account can start as soon as you have pressed the key. This option only switches windows; it sends nothing to the game.
+
+**Notes**
+
+- "Not a cheat" and the security notes were rewritten together: the key press is the one thing Nexus ever sends to the game, and it is now spelled out that it is off by default, needs your agreement, goes only to the window Nexus opened, and stops once the sign-in is done.
+
 ## v0.4.6 (2026-09-30)
 
 **Added**
