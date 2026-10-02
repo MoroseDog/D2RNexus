@@ -69,6 +69,7 @@ Everything stays on your own PC, in `%LOCALAPPDATA%\D2RNexus`:
 | `WebView2` | Browser data for the login window. It uses a private browsing session and doesn't keep login cookies |
 | `Tools` | The Handle tool downloaded from Microsoft |
 | `logs` | Daily logs. Accounts are masked, and passwords and tokens are never written |
+| `consent.txt` | The time you agreed to the automatic key press and the text you agreed to. It is only added to, and the log retention setting never removes it |
 
 ## Where it connects
 
