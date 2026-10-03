@@ -4,6 +4,12 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.5.1 (2026-10-03)
+
+**Improved**
+
+- **Every row in the account list now shows the state of the automatic key press.** An account the program presses for is marked "Title screen: auto" in red; one it leaves alone is "Title screen: manual" in green. v0.5.0 made the feature settable per account, but nothing on screen said which accounts had it on — you had to open each one to find out. Now a glance is enough. With no account using it the mark does not appear, so it costs no space.
+
 ## v0.5.0 (2026-10-02)
 
 **Added**

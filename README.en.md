@@ -35,6 +35,7 @@ To keep your main account or a mule out of this entirely, leave it off for that 
 > - The feature is **off by default**. Leave it off and Nexus behaves exactly as it did before, sending no keys at all.
 > - To use it you have to turn it on yourself under "Global settings → Help with signing in". You are first shown what it does, and the agree button only becomes available after a five-second countdown.
 > - Once it is on, the program is operating the game for you. **The risk to your account is yours**, so weigh it before you decide.
+> - **Every row in the account list says so.** An account the program presses for is marked **"Title screen: auto" in red**; one it leaves alone is **"Title screen: manual" in green**, so you can see which accounts use the feature without opening anything. With no account using it, the mark does not appear at all.
 > - **Each account has its own switch too.** To keep your main account or a mule out of it entirely, turn off "Use the global setting" on that account and leave it off. Turning it on for one account asks you again.
 >
 > What it does, how far it goes and when it stops are in the [security notes](SECURITY.en.md).
