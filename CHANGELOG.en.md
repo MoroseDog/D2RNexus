@@ -4,6 +4,13 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.5.2 (2026-10-05)
+
+**Fixed**
+
+- **The window size and frame cap had no effect on accounts that use a MOD.** Some mods keep the game's settings in their own folder under `Saved Games\Diablo II Resurrected\mods\<mod name>\` instead of the shared file. Nexus always wrote the shared one, so those accounts quietly ignored whatever you set, with nothing on screen to say so. It now checks whether the mod has its own settings file and writes that one. Accounts without a mod, or whose mod shares the settings, behave exactly as before.
+- Note: before such a mod has been run once it has no settings file of its own yet, so that first launch still writes the shared one. From the second launch on it works.
+
 ## v0.5.1 (2026-10-03)
 
 **Improved**
