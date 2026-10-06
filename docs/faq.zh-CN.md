@@ -50,7 +50,7 @@
 
 ### 用 Apple、Google 等方式登录，没有 Battle.net 密码
 
-获取 Token 的页面只接受 Email 和密码。请在登录窗口点击右上角的“用其他方式登录”，用平时的方式登录后再点击“完成登录”。步骤见[用 Apple、Google 等方式登录（繁体中文）](docs/apple-login.md)。
+获取 Token 的页面只接受 Email 和密码。请在登录窗口点击右上角的“用其他方式登录”，用平时的方式登录后再点击“完成登录”。步骤见[用 Apple、Google 等方式登录（繁体中文）](apple-login.md)。
 
 ### 显示“窗口就绪”代表登录成功吗？
 

@@ -50,7 +50,7 @@ If only some of your accounts use it, Nexus **starts the token accounts without 
 
 ### I sign in with Apple, Google, etc. and don't have a Battle.net password
 
-The page that gets the token only accepts an email and password. In the login window, click "Sign in another way" at the top right, sign in the way you usually do, then click "Done signing in". For the steps, see [Signing in with Apple, Google, etc. (Chinese)](docs/apple-login.md).
+The page that gets the token only accepts an email and password. In the login window, click "Sign in another way" at the top right, sign in the way you usually do, then click "Done signing in". For the steps, see [Signing in with Apple, Google, etc. (Chinese)](apple-login.md).
 
 ### Does "Window ready" mean I'm signed in?
 
