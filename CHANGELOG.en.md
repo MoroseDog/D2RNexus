@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.6.0 (2026-10-06)
+
+**Added**
+
+- **Graphics and sound setting groups**: graphics and sound can be saved as named groups, and each account picks its own — high quality on your main account, low on the mules, instead of changing it by hand every time you log in. The graphics group covers resolution scale, NVIDIA DLSS and vertical sync, plus ten quality settings such as texture quality, shadow quality and anti-aliasing; the sound group covers master, music and voice, plus six channels: interface, items, monsters, skills, ambient and combat.
+- **Nothing changes by default**: the first group in both lists is "Current settings", which shows what the game has right now; an account on it has nothing written at launch, exactly as before. To give accounts different quality, go to "Global settings → Game settings", click "Manage setting groups…", and make a copy of Low, Medium, High or Very high (Sound has the game's own defaults) to edit.
+- **Every setting says what it does on hover**, in terms of whether it costs performance and what is worth lowering first on a mule.
+
+**Notes**
+
+- The FAQ moved out of the README onto a page of its own; the README keeps only the few questions people actually ask. A row of collapsed blocks was not something anyone reads.
+
 ## v0.5.2 (2026-10-05)
 
 **Fixed**
