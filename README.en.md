@@ -52,6 +52,7 @@ To keep your main account or a mule out of this entirely, leave it off for that 
 
 - **Login region, windowed mode, mute, MOD, extra launch options**
 - **Game settings** — window size, frame cap, CPU priority, and named graphics and sound groups. High quality on your main account, low on the mules, each account on its own group
+- **Game options kept the same across accounts** — there is only one game options file and the games overwrite each other's; with this on every account gets the same one, so what you changed in one is not wiped out by another (off by default)
 - **Window renaming** — the game's title changes to the account name, so you won't mix them up when running several
 
 **Other**

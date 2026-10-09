@@ -64,6 +64,8 @@ It only writes what you picked under "Game settings" for that account: **Window 
 
 Graphics and Sound start on "Current settings", which means the account keeps whatever the game has and nothing is written at all. To pin an account to a particular quality, go to "Global settings → Game settings", click "Manage setting groups…", make a copy of one, then select it for that account.
 
+With "Keep game options the same across accounts" turned on, one more set goes in: your own game options (the numbers on the orbs, the automap and so on), the same ones for every account. That exists because with several games open, something you change in one account is wiped out by another. The switch is off by default and nothing of the kind is touched until you turn it on.
+
 Anything Nexus manages is written again at every launch, so changes you make in the game are overwritten next time. To make the values you tuned in the game the defaults, go to "Global settings → Game settings" and click "Read current game settings" once. For frames, the game uses whichever is higher, the cap or the target frame rate of dynamic resolution scaling, so when that target sits above the cap, Nexus brings it down too.
 
 ### The frame cap is set but the frame rate is different

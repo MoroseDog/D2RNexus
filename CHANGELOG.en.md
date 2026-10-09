@@ -4,6 +4,22 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.7.0 (2026-10-10)
+
+**Fixed**
+
+- **An account could come up with another account's graphics.** The game reads its settings file within about two seconds of opening, and an account signing in writes its own copy back over that same file; when the two land together, the account that just opened reads someone else's settings. Nexus now watches the file from before the game opens and puts the values back the moment anything changes them, until the game has read them. Four runs of three accounts in a row were all correct, and in two of them the recording shows those two events happening in the same second without a problem.
+
+**Added**
+
+- **Keep game options the same across accounts** (off by default): there is only one game options file and every game shares it, and each game writes its own copy back when it leaves a room — so something you changed in one account (the number on the life orb, say) is wiped out by another. With this on, Nexus remembers your game options and gives every account the same ones, so overwriting each other no longer matters. After changing options in the game, run one game on its own and close it and they are remembered, or use "Take the current game settings" under "Global settings → Game settings".
+- **Game options can be changed from Nexus**: "Global settings → Game settings → Game options…" has fifteen of them — item names, picking up gold, the numbers on the life and mana orbs, the clock and so on — without going into the game, and they apply to every account.
+- **Sharpening and dynamic resolution joined the graphics groups**, which now hold fifteen settings instead of thirteen.
+
+**Notes**
+
+- A copy of the game settings file from just before the last launch is now kept as well, because Nexus writes more of that file once game options are kept the same.
+
 ## v0.6.0 (2026-10-06)
 
 **Added**
