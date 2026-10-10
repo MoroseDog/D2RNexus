@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.7.1 (2026-10-10)
+
+**Fixed**
+
+- **A single empty value in the settings file stopped Nexus from opening.** v0.6.0 put a guard in for this, but the guard never actually ran, and only two fields were safe because they were protected another way; any other field still kept the program from starting. It is properly fixed now, and an empty value is read as blank wherever it appears.
+- **Nexus held on to the game settings file for a moment after the game had closed.** That hold is there to cover the seconds in which a game reads the file when it opens, but keeping it after the game has gone could put back something you were changing in one of the other games. It now lets go as soon as the game closes.
+
+**Other**
+
+- "Take the current game settings" is now "Take the current game options", so it no longer reads the same as "Read current game settings" above it.
+- With "Keep game options the same across accounts" off, the "Game options…" and "Take the current game options" buttons are greyed out — pressing them did nothing in that state anyway.
+
 ## v0.7.0 (2026-10-10)
 
 **Fixed**
