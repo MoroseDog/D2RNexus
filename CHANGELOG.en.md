@@ -12,7 +12,7 @@ The newest version is at the top. Download from [Releases](https://github.com/Mo
 
 **Added**
 
-- **Keep game options the same across accounts** (off by default): there is only one game options file and every game shares it, and each game writes its own copy back when it leaves a room — so something you changed in one account (the number on the life orb, say) is wiped out by another. With this on, Nexus remembers your game options and gives every account the same ones, so overwriting each other no longer matters. After changing options in the game, run one game on its own and close it and they are remembered, or use "Take the current game settings" under "Global settings → Game settings".
+- **Keep game options the same across accounts** (off by default): there is only one game options file and every game shares it, and each game writes back the copy it read when it opened — so something you changed in one account (the number on the life orb, say) is wiped out by another. With this on, Nexus remembers your game options and gives every account the same ones, so overwriting each other no longer matters. After changing options in the game, run one game on its own and close it and they are remembered, or use "Take the current game settings" under "Global settings → Game settings".
 - **Game options can be changed from Nexus**: "Global settings → Game settings → Game options…" has fifteen of them — item names, picking up gold, the numbers on the life and mana orbs, the clock and so on — without going into the game, and they apply to every account.
 - **Sharpening and dynamic resolution joined the graphics groups**, which now hold fifteen settings instead of thirteen.
 
