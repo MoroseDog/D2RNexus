@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.8.0 (2026-10-25)
+
+**Added**
+
+- **Back up and restore your settings.** "Help → Back up settings…" saves your accounts, groups and every setting into one file; on a new computer, install Nexus and choose "Help → Restore settings…" and they all come back, with no hunting for the settings folder and copying it by hand. **The backup holds no passwords or login tokens** — Windows ties those to the user on the computer that saved them and they cannot be opened anywhere else, so you enter them again after restoring. It does hold your full login email addresses, so think twice before putting it in cloud storage or passing it on.
+
+**Fixed**
+
+- **Nexus would not open after settings were copied to a new computer.** The password file cannot be opened on another machine, and that was treated as a damaged file, which closed the program. Your accounts, groups and settings now load as usual with only the passwords and tokens dropped, and Nexus tells you to enter them again.
+
+- **The message for unreadable settings guessed at the wrong cause.** It always said the files might be damaged or unreadable, when the usual reason is that only one file out of the folder was copied across. It now says plainly that the files are not all from the same save, and to copy the whole folder.
+
 ## v0.7.1 (2026-10-10)
 
 **Fixed**

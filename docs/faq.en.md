@@ -124,7 +124,7 @@ No. When you reopen Nexus, it still recognizes the games it opened earlier and w
 
 No. Updating means replacing the old `D2RNexus.exe` with the new one. Accounts, groups and display settings live in a separate folder, and the new version picks them up as they are.
 
-To keep a copy of your own, use "Help → Open the settings folder" in the top menu and copy the whole folder. **On another computer or under another Windows user, passwords and login tokens have to be entered again**: those two files are encrypted by Windows for the user who created them and cannot be opened elsewhere.
+To keep a copy of your own, or to move to another computer, use "Help → Back up settings…" in the top menu to save a single file. On the new computer, install Nexus and choose "Help → Restore settings…" — your accounts, groups and all your settings come back. **Passwords and login tokens are not in the backup and have to be entered again**: those are encrypted by Windows for the user who created them and cannot be opened on another machine. The backup does hold your full login email addresses, so think twice before putting it in cloud storage or passing it on.
 
 ### How do I remove it completely?
 
