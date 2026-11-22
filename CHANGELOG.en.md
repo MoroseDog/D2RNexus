@@ -4,6 +4,18 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.8.1 (2026-11-23)
+
+**Fixed**
+
+- **The multi-instance limit could not be cleared on a Snapdragon (ARM) computer.** Microsoft's tool comes in one build per processor type, and Nexus always used the same one. Both are now kept ready, and if the first one will not run, Nexus tries the other.
+- **When clearing the limit failed, the line explaining why was a row of question marks.** The tool prints Windows' own error message, and Nexus was not reading it in the system's text encoding, so Chinese and Korean messages turned into question marks — the one line that said what went wrong. It is readable now.
+- **Nexus reported "multi-instance limit cleared" when the tool had found nothing at all.** The second game still would not start. Nexus now checks again with the other build, and only treats the limit as cleared when neither finds anything.
+
+**Other**
+
+- The first time you launch a second game after updating, Nexus asks once more whether to download the tool from Microsoft, because it now keeps a build for each processor type. Answer Yes and it will not ask again.
+
 ## v0.8.0 (2026-10-25)
 
 **Added**
