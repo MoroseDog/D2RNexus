@@ -4,6 +4,16 @@
 
 The newest version is at the top. Download from [Releases](https://github.com/MoroseDog/D2RNexus/releases).
 
+## v0.8.2 (2026-11-24)
+
+**Fixed**
+
+- **On a Snapdragon (ARM) computer, clearing the multi-instance limit put up a machine-type-mismatch box every time.** 0.8.1 keeps a build of the tool for each processor type and tries the other one when the first will not run; on those computers the one it tried first was the one that cannot run, and Windows put up that box for you to dismiss at that moment. Multiboxing itself worked — the box was the only thing wrong. Nexus now picks the right build straight away, so there is nothing to fall back from and no box.
+
+**Other**
+
+- The tool does not have to be downloaded again. 0.8.1 counted itself ready only with a build for both processor types, so it asked once more after updating; only the build actually used is needed now.
+
 ## v0.8.1 (2026-11-23)
 
 **Fixed**
